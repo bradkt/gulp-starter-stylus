@@ -14,14 +14,12 @@ module.exports = {
       "!" + dest + "/**.map"
     ]
   },
-  sass: {
-    src: src + "/sass/*.{sass,scss}",
+  stylus: {
+    src: src + "/stylus/!(_)*.{styl,stylus}",
     dest: dest,
     settings: {
-      // Required if you want to use SASS syntax
-      // See https://github.com/dlmanning/gulp-sass/issues/81
-      sourceComments: 'map',
-      imagePath: '/images' // Used by the image-url helper
+      errors: true,
+      use: [ require('nib')() ]
     }
   },
   images: {

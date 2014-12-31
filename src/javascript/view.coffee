@@ -20,7 +20,7 @@ module.exports = Backbone.View.extend
         'BrowserSync'
         'CoffeeScript'
         'Compass'
-        'SASS'
+        'Stylus'
         'Handlebars'
         'Image optimization'
         'LiveReload'

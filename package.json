@@ -4,7 +4,7 @@
   "description": "Gulp starter with common tasks and scenarios",
   "repository": {
     "type": "git",
-    "url": "git://github.com/spiralx/gulp-starter.git"
+    "url": "git://github.com/spiralx/gulp-starter-stylus.git"
   },
   "browser": {
     "underscore": "backbone/node_modules/underscore",

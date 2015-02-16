@@ -2,6 +2,7 @@ var dest = "./build";
 var src = './src';
 
 module.exports = {
+
   browserSync: {
     server: {
       // We're serving the src folder as well
@@ -14,6 +15,7 @@ module.exports = {
       "!" + dest + "/**.map"
     ]
   },
+
   stylus: {
     src: src + "/stylus/!(_)*.{styl,stylus}",
     dest: dest,
@@ -22,14 +24,17 @@ module.exports = {
       use: [ require('nib')() ]
     }
   },
+
   images: {
     src: src + "/images/**",
     dest: dest + "/images"
   },
+
   markup: {
     src: src + "/htdocs/**",
     dest: dest
   },
+
   browserify: {
     // Enable source maps
     debug: true,
@@ -47,4 +52,5 @@ module.exports = {
       outputName: 'head.js'
     }]
   }
+  
 };
